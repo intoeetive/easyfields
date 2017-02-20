@@ -83,7 +83,7 @@ class Easyfields_DropdownFieldType extends BaseOptionsFieldType
 		if (!empty($settings['options']))
 		{
 			$options = explode("\n", $settings['options']);
-            $settings['options'] = [];
+            $settings['options'] = [''=>''];
             foreach ($options as $option)
             {
                 $option = trim($option);
